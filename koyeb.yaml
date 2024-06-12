@@ -1,0 +1,10 @@
+name: telegram-bot
+services:
+  - name: telegram-bot-service
+    port: 8000
+    build:
+      type: docker
+      dockerfile: Dockerfile
+    env:
+      - name: TELEGRAM_BOT_TOKEN
+        value: "${6531059902:AAFWL-dyRtV0uHpG1Ch9IkE5IFZzSqWeh8E}"
